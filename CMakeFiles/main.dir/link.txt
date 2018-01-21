@@ -1,0 +1,1 @@
+g++   -std=c++11 -g  -L/usr/local/lib CMakeFiles/main.dir/main.cpp.o  -o main src/libglutils.a /usr/lib/x86_64-linux-gnu/libGL.so /usr/lib64/libGLEW.so /usr/local/lib/libglfw.so.3.2 -lassimp -Wl,-rpath,/usr/local/lib 

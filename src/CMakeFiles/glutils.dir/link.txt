@@ -1,0 +1,2 @@
+/usr/bin/ar qc libglutils.a  CMakeFiles/glutils.dir/mOpenGLUtils.cpp.o CMakeFiles/glutils.dir/mShader.cpp.o CMakeFiles/glutils.dir/mMeshRender.cpp.o CMakeFiles/glutils.dir/mRotateUtils.cpp.o
+/usr/bin/ranlib libglutils.a

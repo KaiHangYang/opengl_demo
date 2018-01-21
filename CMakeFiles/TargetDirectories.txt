@@ -1,0 +1,6 @@
+/home/kaihang/Projects/opengl_test/CMakeFiles/rebuild_cache.dir
+/home/kaihang/Projects/opengl_test/CMakeFiles/edit_cache.dir
+/home/kaihang/Projects/opengl_test/CMakeFiles/main.dir
+/home/kaihang/Projects/opengl_test/src/CMakeFiles/edit_cache.dir
+/home/kaihang/Projects/opengl_test/src/CMakeFiles/rebuild_cache.dir
+/home/kaihang/Projects/opengl_test/src/CMakeFiles/glutils.dir
