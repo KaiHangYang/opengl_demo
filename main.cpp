@@ -33,6 +33,5 @@ int main() {
 
         gl_session.drawEnd();
     }
-
     return 0;
 }

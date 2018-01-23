@@ -88,7 +88,6 @@ void MeshEntry::render() {
         glBindBuffer(GL_ARRAY_BUFFER, VBO[NORMAL_BUFFER]);
         glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 0, (void *)0);
         glEnableVertexAttribArray(2);
-        
     }
     if (0 != VBO[INDEX_BUFFER]) {
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, VBO[INDEX_BUFFER]);
@@ -131,6 +130,7 @@ mMeshRender::~mMeshRender() {
 // The fixed light and parameter
 void mMeshRender::setLightParams(int type) {
     bool sign = 1;
+    // set the light at very far place
     this->shader->setVal("pointLights[0].position", glm::vec3(0, sign * 4000, 4000));
     this->shader->setVal("pointLights[1].position", glm::vec3(0, sign * 4000, -4000));
     this->shader->setVal("pointLights[2].position", glm::vec3(-4000, sign*4000, 0));
@@ -140,9 +140,6 @@ void mMeshRender::setLightParams(int type) {
         this->shader->setVal(("pointLights["+std::to_string(i)+"].ambient").c_str(), glm::vec3(0.1f, 0.1f, 0.1f));
         this->shader->setVal(("pointLights["+std::to_string(i)+"].diffuse").c_str(), glm::vec3(0.5f, 0.5f, 0.5f));
         this->shader->setVal(("pointLights["+std::to_string(i)+"].specular").c_str(), glm::vec3(0.7f, 0.7f, 0.7f));
-        this->shader->setVal(("pointLights["+std::to_string(i)+"].constant").c_str(), 1.0f);
-        this->shader->setVal(("pointLights["+std::to_string(i)+"].linear").c_str(), 0.09f);
-        this->shader->setVal(("pointLights["+std::to_string(i)+"].quadratic").c_str(), 0.032f);
     }
 }
 
